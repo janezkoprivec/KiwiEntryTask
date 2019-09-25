@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FlightFragment">
+
+    <ImageView
+        android:id="@+id/destination_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+       />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From: "
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To: "
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/layout1"
+            >
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="point a"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="point b"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="$$$$$"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:textColor="#FFFFFF"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
